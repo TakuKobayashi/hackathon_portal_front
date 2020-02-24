@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
-import { StickyContainer, Sticky } from "react-sticky"
-import { Box, Button, Image, Markdown, Text } from "grommet"
-import Sidebar from "./sidebar"
+import React from "react";
+import { Link } from "gatsby";
+import { StickyContainer, Sticky } from "react-sticky";
+import { Box, Button, Image, Markdown, Text } from "grommet";
+import Sidebar from "./sidebar";
 
 const Layout = props => {
-  const { title, children } = props
-  const [toggleNav, setToggleNav] = React.useState(false)
+  const { title, children } = props;
+  const [toggleNav, setToggleNav] = React.useState(false);
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -120,7 +120,7 @@ const Layout = props => {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

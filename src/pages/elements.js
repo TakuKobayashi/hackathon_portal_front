@@ -1,21 +1,19 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import "../utils/normalize.css";
+import "../utils/css/screen.css";
 
 const ElementsPage = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="Elements"
-      />
+      <SEO title="Elements" />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -365,15 +363,27 @@ const ElementsPage = ({ data }, location) => {
           <h2 id="code">Code</h2>
           <pre>
             <code>
-              i = <span style={{color: "rgb(191,90,242)"}}>0</span>;{"\n"}
-              {"\n"}<span style={{color: "rgb(10,132,255)"}}>while</span> (!deck.<span style={{color: "rgb(255,214,10)"}}>isInOrder</span>()) {"{"}
+              i = <span style={{ color: "rgb(191,90,242)" }}>0</span>;{"\n"}
               {"\n"}
-              {"    "}print <span style={{color: "rgb(50,215,75)"}}>'Iteration '</span> + i;{"\n"}
-              {"    "}deck.<span style={{color: "rgb(255,214,10)"}}>shuffle</span>();{"\n"}
+              <span style={{ color: "rgb(10,132,255)" }}>while</span> (!deck.
+              <span style={{ color: "rgb(255,214,10)" }}>
+                isInOrder
+              </span>()) {"{"}
+              {"\n"}
+              {"    "}print{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>'Iteration '</span> + i;
+              {"\n"}
+              {"    "}deck.
+              <span style={{ color: "rgb(255,214,10)" }}>shuffle</span>();{"\n"}
               {"    "}i++;{"\n"}
               {"}"}
               {"\n"}
-              {"\n"}print <span style={{color: "rgb(50,215,75)"}}>'It took '</span> + i + <span style={{color: "rgb(50,215,75)"}}>' iterations to sort the deck.'</span>;
+              {"\n"}print{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>'It took '</span> + i +{" "}
+              <span style={{ color: "rgb(50,215,75)" }}>
+                ' iterations to sort the deck.'
+              </span>
+              ;
             </code>
           </pre>
           <h2 id="grid-system">Grid system</h2>
@@ -522,8 +532,8 @@ const ElementsPage = ({ data }, location) => {
         </div>
       </article>
     </Layout>
-  )
-}
+  );
+};
 
 const indexQuery = graphql`
   query {
@@ -558,7 +568,7 @@ const indexQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default props => (
   <StaticQuery
@@ -567,4 +577,4 @@ export default props => (
       <ElementsPage location={props.location} data={data} {...props} />
     )}
   />
-)
+);

@@ -1,6 +1,6 @@
-import { Box, Button, Image, Markdown, Text } from "grommet"
-import { Github, Reddit, Twitter } from "grommet-icons"
-import * as React from "react"
+import { Box, Button, Image, Markdown, Text } from "grommet";
+import { Github, Reddit, Twitter } from "grommet-icons";
+import * as React from "react";
 import {
   TwitterTimelineEmbed,
   TwitterShareButton,
@@ -12,7 +12,7 @@ import {
   TwitterDMButton,
   TwitterVideoEmbed,
   TwitterOnAirButton,
-} from "react-twitter-embed"
+} from "react-twitter-embed";
 
 export default () => (
   <div>
@@ -54,4 +54,4 @@ export default () => (
       </Box>
     </Box>
   </div>
-)
+);
