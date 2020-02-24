@@ -20,8 +20,14 @@ const HomepageIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Posts"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        title="ハッカソンポータル"
+        keywords={[
+          `Hackathon`,
+          `ハッカソン`,
+          `アイディアソン`,
+          `Ideathon`,
+          `開発合宿`,
+        ]}
       />
       <header className="page-head">
         <h2 className="page-head-title">

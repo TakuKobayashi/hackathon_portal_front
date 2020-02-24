@@ -66,16 +66,8 @@ const Layout = props => {
               >
                 Twitter
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
               <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
+                href="https://github.com/TakuKobayashi/hackathon_portal"
                 title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
