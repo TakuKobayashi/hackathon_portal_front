@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
+import Iframe from "react-iframe";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -28,7 +29,16 @@ const BlogIndex = ({ data }, location) => {
         </h2>
       </header>
       <article className="post-content page-template no-image">
-        <div className="post-content-body" />
+        <div className="post-content-body">
+          <Iframe
+            src="https://calendar.google.com/calendar/embed?src=jtmjds9ff5nh5365ne7se1spbg%40group.calendar.google.com&ctz=Asia%2FTokyo"
+            style="border: 0"
+            width="600"
+            height="450"
+            frameborder="0"
+            scrolling="no"
+          />
+        </div>
       </article>
       <div className="post-feed">
         {posts.map(({ node }) => {
