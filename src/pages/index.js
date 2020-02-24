@@ -5,6 +5,18 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton,
+} from "react-twitter-embed"
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -22,14 +34,20 @@ const BlogIndex = ({ data }, location) => {
         title="Posts"
         keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
       />
-      {/* <Bio /> */}
-      {data.site.siteMetadata.description && (
-        <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
-        </header>
-      )}
+      <header className="page-head">
+        <h2 className="page-head-title">
+          {data.site.siteMetadata.description}
+        </h2>
+      </header>
+      <article className="post-content page-template no-image">
+        <div className="post-content-body">
+          <TwitterFollowButton screenName="HackathonPortal" />
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="HackathonPortal"
+          />
+        </div>
+      </article>
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++
