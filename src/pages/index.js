@@ -38,16 +38,42 @@ const HomepageIndex = ({ data }, location) => {
             frameborder="0"
             scrolling="no"
           />
-          <Iframe
-            className="hatenablogcard"
-            style="display:block;width:100%;height:155px;margin:12px 0;max-width:680px;"
-            title="%title%"
-            src="https://hatenablog-parts.com/embed?url=https://hackathonportal.blogspot.com/2019/12/20203.html"
-            frameborder="0"
-            scrolling="no"
-          >
-            読み込んでいます…
-          </Iframe>
+          <div className="row">
+            <div className="col">
+              <div
+                style={{
+                  padding: "1rem 0",
+                  textAlign: "center",
+                }}
+              >
+                <Iframe
+                  className="hatenablogcard"
+                  style="display:block;width:100%;height:155px;margin:12px 0;max-width:680px;"
+                  title="%title%"
+                  src="https://hatenablog-parts.com/embed?url=https://hackathonportal.blogspot.com/2019/12/20203.html"
+                  frameborder="0"
+                  scrolling="no"
+                />
+              </div>
+            </div>
+            <div className="col">
+              <div
+                style={{
+                  padding: "1rem 0",
+                  textAlign: "center",
+                }}
+              >
+                <Iframe
+                  className="hatenablogcard"
+                  style="display:block;width:100%;height:155px;margin:12px 0;max-width:680px;"
+                  title="%title%"
+                  src="https://hatenablog-parts.com/embed?url=https://hackathonportal.blogspot.com/2019/12/20203.html"
+                  frameborder="0"
+                  scrolling="no"
+                />
+              </div>
+            </div>
+          </div>
           <Iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfNp4cevVQMR5nzJEgma_eEoSsVNznEgXiFd2bjgQt5g3F_XA/viewform?embedded=true"
             width="600"
