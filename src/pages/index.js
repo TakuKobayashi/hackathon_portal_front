@@ -38,6 +38,16 @@ const BlogIndex = ({ data }, location) => {
             frameborder="0"
             scrolling="no"
           />
+          <Iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfNp4cevVQMR5nzJEgma_eEoSsVNznEgXiFd2bjgQt5g3F_XA/viewform?embedded=true"
+            width="600"
+            height="2150"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            読み込んでいます…
+          </Iframe>
         </div>
       </article>
       <div className="post-feed">
