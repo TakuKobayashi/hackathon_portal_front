@@ -11,7 +11,7 @@ import PostCard from "../components/postCard";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }, location) => {
+const HomepageIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
   //const posts = []
@@ -38,6 +38,16 @@ const BlogIndex = ({ data }, location) => {
             frameborder="0"
             scrolling="no"
           />
+          <Iframe
+            className="hatenablogcard"
+            style="display:block;width:100%;height:155px;margin:12px 0;max-width:680px;"
+            title="%title%"
+            src="https://hatenablog-parts.com/embed?url=https://hackathonportal.blogspot.com/2019/12/20203.html"
+            frameborder="0"
+            scrolling="no"
+          >
+            読み込んでいます…
+          </Iframe>
           <Iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfNp4cevVQMR5nzJEgma_eEoSsVNznEgXiFd2bjgQt5g3F_XA/viewform?embedded=true"
             width="600"
@@ -105,7 +115,7 @@ export default props => (
   <StaticQuery
     query={indexQuery}
     render={data => (
-      <BlogIndex location={props.location} props data={data} {...props} />
+      <HomepageIndex location={props.location} props data={data} {...props} />
     )}
   />
 );
