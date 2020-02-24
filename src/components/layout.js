@@ -1,5 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StickyContainer, Sticky } from "react-sticky"
+import { Box, Button, Image, Markdown, Text } from "grommet"
+import Sidebar from "./sidebar"
 
 const Layout = props => {
   const { title, children } = props
@@ -84,9 +87,26 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
-          {children}
-        </div>
+        <StickyContainer>
+          <Box direction="row-responsive">
+            <Box basis="large" flex="grow" direction="row-responsive">
+              <div id="swup" className="transition-fade">
+                {children}
+              </div>
+            </Box>
+            <Box basis="medium">
+              <Sticky>
+                {({ style }) => (
+                  <aside style={style}>
+                    <div>
+                      <Sidebar />
+                    </div>
+                  </aside>
+                )}
+              </Sticky>
+            </Box>
+          </Box>
+        </StickyContainer>
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
