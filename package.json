@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-london-after-midnight",
+  "name": "hackathon_portal_front",
   "private": true,
   "description": "A custom, image-centric theme for Gatsby",
   "version": "1.0.2",
   "author": "Vaporwavy <i@ttv8.me> (https://vaporwavy.io)",
   "bugs": {
-    "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
+    "url": "https://github.com/TakuKobayashi/hackathon_portal_front/issues"
   },
   "dependencies": {
     "gatsby": "^2.4.2",
@@ -34,8 +34,7 @@
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
-    "typeface-nunito": "^0.0.72",
-    "url-join": "^4.0.0"
+    "typeface-nunito": "^0.0.72"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
@@ -46,7 +45,7 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/TakuKobayashi/hackathon_portal_front#readme",
   "keywords": [
     "gatsby",
     "ghost",
@@ -58,7 +57,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaporwavy/gatsby-london-after-midnight.git"
+    "url": "https://github.com/TakuKobayashi/hackathon_portal_front.git"
   },
   "scripts": {
     "build": "gatsby build",

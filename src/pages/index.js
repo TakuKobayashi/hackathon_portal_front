@@ -13,6 +13,7 @@ import "../utils/css/screen.css"
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  //const posts = []
   let postCounter = 0
 
   return (
